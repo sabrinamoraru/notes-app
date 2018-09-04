@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Notes App</title>
+        <link href="/images/favicon.png" rel="icon">
+        <link href="/styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Notes App</h1>
+                <h2 class="header__subtitle">Take notes and never forget</h2>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container actions__container--spaced">
+                <a href="/index.html">Back</a>
+                <span id="last-edited"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div id="create-note-error-wrapper-hidden">
+                Please add description
+            </div>
+            <input id="note-title" class="title-input" placeholder="Note title">
+            <textarea id="note-body" class="body-input" placeholder="Enter note text"></textarea>
+            <button id="add-note" class="button button--primary">Add note</button>
+        </div>
+
+        <script src="/scripts/create-bundle.js"></script>
+    </body>
+</html>
